@@ -379,7 +379,7 @@ ul {
   .addBtn {
     margin-top: 1em;
     padding: 6.5px;
-    width: 25%;
+    width: fit-content;
     background: #d9d9d9;
     color: #555;
     float: left;
