@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../my-portfolio-website/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@400;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo2.png" alt="">
+        </div>
+        <button class="nav-toggle" area-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">Мои навыки</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">Моя работа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, <span class="intro__name">это я - <strong>Адиль</strong></span>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">веб-разработчик</p>
+        <img src="img/my-photo.jpeg" alt="a picture of Adil" class="intro__img">
+    </section>
+
+    <!-- My skills -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">Мои навыки</h2>
+        <div class="skills">
+            <div class="skill skill-left">
+                <h3>Мой опыт</h3>
+                <p>Скажу честно у меня нет опыта в разработке реальных коммерческих проектов. Однако, я каждый день
+                    изучаю технологии веб-разработки. Уже умею верстать сайты и оживлять их с помощю JavaScript. Ниже в
+                    разделе "мои работы" можно найти мой проекты, которые были
+                    сделаны в рамках саморазвития.</p>
+            </div>
+            <div class="skill skill-right">
+                <h3 class="skill__heading">Мои креативные навыки</h3>
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+            </div>
+        </div>
+        <a href="https://nur-sultan.hh.kz/resume_converter/%D0%9D%D1%83%D1%80%D0%BA%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%20%D0%90%D0%B4%D0%B8%D0%BB%D1%8C.pdf?hash=75e550abff0803cd130039ed1f6c69706f4e6d&type=pdf&hhtmSource=resume_view&hhtmFrom=user_resumes_list"
+            class="btn">Скачать резюме</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Кто я</h2>
+        <p class="section__subtitle section__subtitle--about">Перспективный web-dev</p>
+        <div class="about-me__body">
+            <p>Я любопытный человек в познанию нового, и я получаю удовольствие от работы, которая заставляет меня
+                учиться чему-то новому. И я был очарован возможностями веб-разработчика, которые позволяют
+                проявлять творческие и технические способности, и разрабатывать продукты, приносящие пользу и
+                вдохновение другим.</p>
+        </div>
+        <img src="img/about-me.jpg" alt="again a picture of Adil" class="about-me__img">
+    </section>
+
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Моя работа</h2>
+        <p class="section__subtitle section__subtitle--work">Коллекция моих работ</p>
+
+        <div class="portfolio">
+            <a href="../my-portfolio-website/portfolio-item/portfolio-item.html" class="portfolio__item">
+                <img src="img/pfi-1.png" alt="" class="portfolio__img">
+            </a>
+            <a href="../my-portfolio-website/portfolio-item/todoList.html" class="portfolio__item">
+                <img src="img/pfi-2.png" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:nurkali.adil@gmail.com" class="footer--link">nurkali.adil@gmail.com</a>
+        <ul class="social--list">
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://vk.com/adilnurastkz">
+                    <i class="fab fa-vk"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://facebook.com/adilnurastkz">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://instagram.com/adil.aksamal/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../my-portfolio-website/app.js"></script>
+
+</body>
+
+</html>

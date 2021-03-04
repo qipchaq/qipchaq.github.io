@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../portfolio-item/portfolio-item-app.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo2.png" alt="">
+        </div>
+        <button class="nav-toggle" area-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="../index.html#skills" class="nav__link">Мои навыки</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">Моя работа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portfolio-item">
+        <h2 class="section__title section__title--portfolio">
+            Приложение "Табло счета"
+        </h2>
+        <p class="section__subtitle section__subtitle--portfolio">Работа с примением css фреймворка Bulma и Java Script
+        </p>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <figure class="image is-3by1">
+                        <img src="http://pixelartmaker.com/art/f9aeacb960b3f10.png">
+                    </figure>
+                    <div class="card-content has-background-warning-light">
+                        <div class="content is-large is-size-1 has-text-weight-bold has-text-centered">
+                            <span id='p1Display'>0</span> : <span id='p2Display'>0</span>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-size-6">
+                        <div class="select">
+                            <select name="" id="playTo">
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <button id="p1Button" class="button card-footer-item has-background-info">Игрок 1</button>
+                        <button id="p2Button" class="button card-footer-item has-background-primary">Игрок 2</button>
+                        <button id="resetButton" class="button card-footer-item has-background-danger">Обновить</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section__subtitle section__subtitle--tittle">Описание работы приложения</h3>
+        <p class="section__subtitle section__subtitle--desciption">В данном счетчике можно выбрать счет игры, к примеру,
+            до кого счета
+            можно играть. Затем счет идет до
+            выбранного значения. После остановки счета можно обнулить значения и начать все c сначала.</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #111">
+        <a href="mailto:nurkali.adil@gmail.com" class="footer--link">nurkali.adil@gmail.com</a>
+        <ul class="social--list">
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://vk.com/adilnurastkz">
+                    <i class="fab fa-vk"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://facebook.com/adilnurastkz">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a class="social--list__link" href="https://instagram.com/adil.aksamal/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script src="../portfolio-item/score-keper.js"></script>
+
+</body>
+
+</html>
